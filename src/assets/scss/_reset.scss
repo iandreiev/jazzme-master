@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Manrope', sans-serif !important;
+    font: inherit;
+    vertical-align: baseline;
+    background-color: $white;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: lighten($black, 20%);
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h1{
+    font-size: $font_5;
+    font-weight: 800;
+}
+
+h2{
+    font-size: $font_4;
+    font-weight: 700;
+}
+
+h3{
+    font-size: $font_3;
+    font-weight: 600;
+}

@@ -1,0 +1,19 @@
+.ic{
+    &-1x{
+        width: 24px;
+        height: 24px;
+        background-size: contain;
+    }
+    &-claps{
+        background-image: url(../icons/ic-claps.svg);
+    }
+    &-heart{
+        background-image: url(../icons/ic-heart-out.svg);
+        &-active{
+        background-image: url(../icons/ic-heart.svg);
+        }
+    }
+    &-comments{
+        background-image: url(../icons/ic-comments.svg);
+    }
+}

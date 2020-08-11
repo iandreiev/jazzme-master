@@ -1,0 +1,13 @@
+.link{
+    text-decoration: none;
+    transition: $transition;
+    &-regular{
+        color: $green;
+        &:hover{
+            color: $green_1
+        }
+        &:active, &:visited{
+            color: $green_2;
+        }
+    }
+}

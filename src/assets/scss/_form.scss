@@ -1,0 +1,53 @@
+.form{
+    &-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &-group{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-control{
+
+    }
+    &-actions{
+        display: flex;
+        flex-direction: row;
+        margin-top:$p;
+        .btn-sp{
+            margin-right:12px;
+        }
+    }
+    &-meta{
+        .avatar{
+            width: 24px;
+            height: 24px;
+            border-radius: 12px;
+        }
+    }
+}
+
+input, textarea, select{
+    font-family: "Manrope";
+}
+
+input.form-control[type=text],
+input.form-control[type=email],
+input.form-control[type=password]{
+    width: 100%;
+padding: 7px;
+font-size: 16px;
+margin: 0px 16px;
+border: none;
+color: $grey;
+transition: $transition;
+border-bottom: 1px solid $grey;
+&:focus{
+    color: lighten($black, 20%);
+    outline: none;
+    border-bottom: 1px solid $green;
+    font-weight: 600;
+}
+}

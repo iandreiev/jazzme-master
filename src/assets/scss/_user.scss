@@ -1,0 +1,35 @@
+.user{
+    &-container{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+    &-pic{
+        img{
+            width: abs($p*4);
+            height: abs($p*4);
+            border-radius: abs($p*2);
+        }
+    }
+    &-meta{
+        margin: $p;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &-title{
+                color: lighten($black, 40%);
+                font-weight: 600;
+                text-align: center;
+            }
+            &-subtitle{
+                text-align: center;
+                color: $green_2;
+                font-weight: 800;
+                font-size: $font_2;
+            }
+        }
+    }
+}

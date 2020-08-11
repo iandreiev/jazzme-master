@@ -1,0 +1,12 @@
+.text{
+    &-grey{
+        color: $grey;
+    }
+    &-green{
+        color: $green;
+    }
+}
+
+.pointer{
+    cursor: pointer;
+}

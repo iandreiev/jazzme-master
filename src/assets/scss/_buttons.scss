@@ -1,0 +1,76 @@
+.btn{
+    display: flex;
+    width: auto;
+    padding: 14px 26px;
+    border-radius: $radius;
+    justify-content: center;
+    align-items: center;
+    font-size: $p;
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: none;
+    border:none;
+    transition: $transition;
+    // margin: 0.5em;
+    &-outline{
+        &-success{
+            border: 2px solid $green;
+            color: $green;
+            background-color: $white;
+            &:hover{
+                background: $green_1;
+                border: 2px solid $green_1;
+                color: $white;
+            }
+        }
+    }
+    &-group{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &-regular{}
+    &-warning{}
+    &-danger{}
+    &-info{}
+    &-success{
+        background-color: $green;
+        color: $white;
+        &:hover{
+            ackground-color: $green_1;
+        }
+        &:active{
+            background-color: $green_1;
+        }
+    }
+}
+
+//Special buttons with icon
+.btn-sp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    border:none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    &:focus{
+        outline: none;
+    }
+    &-submit{
+        background-image: url(../icons/ic-send.svg);
+        width: 32px;
+        height: 32px;
+    }
+    &-cam{
+        background-image: url(../icons/ic-cam.svg);
+        width: 24px;
+        height: 24px;
+    }
+    &-image{
+        background-image: url(../icons/ic-image.svg);
+        width: 24px;
+        height: 24px;
+    }
+}

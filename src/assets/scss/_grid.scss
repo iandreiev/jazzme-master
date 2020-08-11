@@ -1,0 +1,59 @@
+/*
+Grid template
+-Main wrapper
+-Sidebar
+*/
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1em abs($p*10);
+}
+.main{
+    position: relative;
+    width: 60%;
+    height: auto;
+}
+.sidebar{
+    position: fixed;
+    width: auto;
+    top: 1em;
+    right: 15em;
+    &-title{
+        margin-bottom: abs($p/2);
+    }
+    &-meta{
+        display:flex;
+    }
+    &-content{
+        display: flex;
+        flex-direction: column;
+        padding: $p abs($p*2);
+        background: $white;
+        border: 1px solid $grey;
+        border-radius: $radius;
+        margin: $p;
+    }
+    &-regular{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: $p abs($p*2);
+        background: $white;
+        // border: 1px solid $grey;
+        // border-radius: $radius;
+        margin: $p;
+    }
+    //Menu
+    &-menu{
+        &-item{
+            padding: abs($p/2) 0px;
+            &:hover{
+                color: $green;
+                cursor: pointer;
+            }
+            &--active{}
+        }
+    }
+}
